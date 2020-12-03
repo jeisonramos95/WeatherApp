@@ -11,6 +11,10 @@ export class HomeService {
   constructor(private httpClient: HttpClient) { }
 
   GetWeather(city: string) {
-    return this.httpClient.get(environment.urlWeather+ '?q=' + city + '&appid=' + environment.apiKey);
+    return this.httpClient.get(environment.urlWeather + '?q=' + city + '&appid=' + environment.apiKey);
+  }
+
+  GetForescat(city: string) {
+    return this.httpClient.get(environment.urlForecast + '?q=' + city + '&appid=' + environment.apiKey);
   }
 }
