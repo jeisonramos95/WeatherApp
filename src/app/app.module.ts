@@ -20,6 +20,12 @@ import { OtherCityComponent } from './components/home/components/other-city/othe
     InformationComponent,
     OtherCityComponent
   ],
+  exports:[
+    BannerComponent,
+    ForecastComponent,
+    InformationComponent,
+    OtherCityComponent  
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
